@@ -21,7 +21,7 @@ Ensure you have the following installed on your system:
 1. Fork the repository on GitHub.
 2. Clone your forked repository locally:
    ```bash
-   git clone https://github.com/your-username/OptiBench.git
+   git clone https://github.com/larrywigington/OptiBench.git
    ```
 3. Navigate into the project directory:
    ```bash
