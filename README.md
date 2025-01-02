@@ -38,6 +38,12 @@ OptiBench/
 │   │   ├── cp/                        # Problem definitions for CP
 │   │   └── ip/                        # Problem definitions for IP
 │   │
+│   ├── baselines/
+│   │   ├── lp.py                      # Simplex/Interior Point Method
+│   │   ├── nlp.py                     # Gradient Descent, etc.
+│   │   ├── cp.py                      # Backtracking, Branch & Bound, etc.
+│   │   └──ip.py                      # Mixed-Integer Programming solvers
+│   │
 │   ├── leaderboard/                   # Interaction with GitHub leaderboard
 │   │   ├── __init__.py
 │   │   ├── leaderboard.py             # Logic for submitting results to GitHub leaderboard
@@ -47,8 +53,13 @@ OptiBench/
 │   ├── submissions/                   # User-submitted solutions
 │   │   ├── __init__.py
 │   │   └── submit_solution.py         # Logic for submitting solutions to the repo
-│   │
-│   ├── cli.py                         # Command line interface for dataset generation & submission
+│   │   
+│   ├── tests/
+│   │   ├── test_generate_datasets.py   # Unit tests for dataset generation tools.
+│   │   ├── test_baselines.py           # Tests for baseline algorithms.
+│   │   └──test_leaderboard.py         # Tests GitHub interaction and leaderboard API.
+│   │   
+│   └──cli.py                         # Command line interface for dataset generation & submission
 │
 ├── datasets/                          # Predefined large datasets for benchmarking (large storage)
 ├── submissions/                       # Directory for user submissions (files will be managed by script)
