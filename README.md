@@ -1,10 +1,6 @@
 # **OptiBench**  
 *A Benchmark Repository for Mathematical Optimization Problems*
 
-    [![PyPI version](https://badge.fury.io/py/optibench.svg)](https://badge.fury.io/py/optibench)]
-    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)]
-    [![Build Status](https://github.com/YOUR_USERNAME/OptiBench/actions/workflows/test.yml/badge.svg)](https://github.com/larrywigington/OptiBench/actions/workflows/test.yml)]
-
 ## **Overview**  
 Welcome to **OptiBench**, an open repository for benchmarking mathematical optimization algorithms. This repository provides a standardized collection of operations research problems, datasets, and baseline solutions. It also features a leaderboard for comparing algorithmic performance across various hardware configurations.  
 
