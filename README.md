@@ -22,17 +22,40 @@ Whether you're a researcher, student, or practitioner, **OptiBench** offers a pl
 ```plaintext
 OptiBench/
 │
-├── datasets/              # Predefined datasets for problems
-├── problems/              # Problem definitions and descriptions
-├── baselines/             # Baseline implementations of algorithms
-├── submissions/           # User-submitted solutions and results
-├── leaderboard/           # Scripts and data for the leaderboard
-├── tests/                 # Validation scripts for solutions
-├── web/                   # Web app or visualization tools (optional)
-├── tools/                 # Helper scripts for dataset generation
-├── README.md              # Overview of the repository
-├── CONTRIBUTING.md        # Guidelines for contributing
-└── LICENSE                # License for the repository
+├── optibench/                        # Core Python package logic
+│   ├── __init__.py                    # Initialization of package
+│   ├── datasets/                      # Dataset generation tools
+│   │   ├── __init__.py
+│   │   ├── generate.py                # Logic for generating datasets
+│   │   ├── lp/                        # Linear Programming datasets and problem generation
+│   │   ├── nlp/                       # Nonlinear Programming datasets and problem generation
+│   │   ├── cp/                        # Combinatorial Programming datasets and problem generation
+│   │   └── ip/                        # Integer Programming datasets and problem generation
+│   │
+│   ├── problems/                      # Problem definitions (e.g., problem1.md)
+│   │   ├── lp/                        # Problem definitions for LP
+│   │   ├── nlp/                       # Problem definitions for NLP
+│   │   ├── cp/                        # Problem definitions for CP
+│   │   └── ip/                        # Problem definitions for IP
+│   │
+│   ├── leaderboard/                   # Interaction with GitHub leaderboard
+│   │   ├── __init__.py
+│   │   ├── leaderboard.py             # Logic for submitting results to GitHub leaderboard
+│   │   ├── fetch_leaderboard.py       # Logic for fetching leaderboard data
+│   │   └── authenticate.py            # GitHub authentication tools (via GitHub API)
+│   │
+│   ├── submissions/                   # User-submitted solutions
+│   │   ├── __init__.py
+│   │   └── submit_solution.py         # Logic for submitting solutions to the repo
+│   │
+│   ├── cli.py                         # Command line interface for dataset generation & submission
+│
+├── datasets/                          # Predefined large datasets for benchmarking (large storage)
+├── submissions/                       # Directory for user submissions (files will be managed by script)
+├── README.md                          # Main README with repo instructions
+├── setup.py                           # Packaging details for the PyPI package
+├── requirements.txt                   # Python package dependencies
+└── LICENSE                            # License file
 ```
 
 ---
